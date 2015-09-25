@@ -32,5 +32,9 @@
     void iRobot_ASCIIDigitLED(unsigned short digit_three,unsigned short digit_two,unsigned short digit_one,unsigned short digit_zero);
     void iRobot_SetSong(char notes[]);
     void iRobot_PlaySong(unsigned short song_number);
+
+    void IRobotStartCleaning();
+    void IRobotStopCleaningAndDock();
+
     
 #endif /* irobot_H */
