@@ -3,9 +3,10 @@
         
     #include "irobot_options.h"
     
-    unsigned long SerialReadChar();
+    char SerialReadChar();
     void SerialWriteChar(unsigned long ch);
     void SerialWriteString(const char str[]);
+    void DelayTime(unsigned long delay);
 
     void iRobot_Start() {
         SerialWriteChar(128);
@@ -123,8 +124,11 @@
         
     void IRobotStartCleaning() {
         iRobot_Start();
+        DelayTime(1000);
         iRobot_SafeMode();
+        DelayTime(1000);
         iRobot_DefaultClean();
+        DelayTime(1000);
         iRobot_Stop();
     }
 
