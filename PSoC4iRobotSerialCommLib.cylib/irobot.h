@@ -136,6 +136,10 @@
         iRobot_Start();
         iRobot_Dock();
         iRobot_Stop();
+        DelayTime(2000);
+        iRobot_Start();
+        iRobot_Dock();
+        iRobot_Stop();
     }
     
 #endif /* irobot_H */
